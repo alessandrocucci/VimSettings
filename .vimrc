@@ -90,9 +90,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 set nu
 
-
-
-
 function! SaveAndExecutePython()
     " SOURCE [reusable window]: https://github.com/fatih/vim-go/blob/master/autoload/go/ui.vim
 
