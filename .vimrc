@@ -33,6 +33,9 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
+" Enable autocompletition
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -89,6 +92,9 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 set nu
+
+
+
 
 function! SaveAndExecutePython()
     " SOURCE [reusable window]: https://github.com/fatih/vim-go/blob/master/autoload/go/ui.vim
