@@ -5,14 +5,22 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
+Plugin 'tmhedberg/SimpylFold'
+Bundle 'davidhalter/jedi-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'mhinz/vim-signify'
+Plugin 'mhinz/vim-startify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,7 +39,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-Plugin 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
 
 " PEP 8
@@ -44,12 +51,11 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
+" Full Stack
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
-
-Plugin 'vim-scripts/indentpython.vim'
 
 function! <SID>StripTrailingWhitespace()
     " Preparation: save last search, and cursor position.
@@ -64,16 +70,19 @@ function! <SID>StripTrailingWhitespace()
 endfunction
 nmap <silent> <Leader><space> :call <SID>StripTrailingWhitespace()<CR>
 
-Bundle 'davidhalter/jedi-vim'
 
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 let python_highlight_all=1
 syntax on
 
-Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
 
 if has('gui_running')
   set background=dark
@@ -84,20 +93,11 @@ endif
 
 call togglebg#map("<F5>")
 
-Plugin 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
-Plugin 'kien/ctrlp.vim'
 set nu
 
-Plugin 'tpope/vim-fugitive'
-
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-Plugin 'mhinz/vim-signify'
-
-Plugin 'mhinz/vim-startify'
 
 
 
