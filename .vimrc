@@ -64,10 +64,7 @@ function! <SID>StripTrailingWhitespace()
 endfunction
 nmap <silent> <Leader><space> :call <SID>StripTrailingWhitespace()<CR>
 
-Bundle 'Valloric/YouCompleteMe'
-
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+Bundle 'davidhalter/jedi-vim'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
@@ -102,7 +99,6 @@ Plugin 'mhinz/vim-signify'
 
 Plugin 'mhinz/vim-startify'
 
-Plugin 'Conque-Shell'
 
 
 function! SaveAndExecutePython()
