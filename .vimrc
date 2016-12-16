@@ -14,7 +14,6 @@ Plugin 'tmhedberg/SimpylFold'
 Bundle 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
@@ -84,15 +83,7 @@ let g:syntastic_check_on_wq = 0
 let python_highlight_all=1
 syntax on
 
-
-if has('gui_running')
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme zenburn
-endif
-
-call togglebg#map("<F5>")
+colorscheme zenburn
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <C-n> :NERDTreeToggle<CR>
