@@ -13,7 +13,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Bundle 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'jnurmine/Zenburn'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
@@ -86,7 +85,7 @@ let g:syntastic_check_on_wq = 0
 let python_highlight_all=1
 syntax on
 
-colorscheme zenburn
+colorscheme cucci
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -160,3 +159,9 @@ function! s:filter_header(lines) abort
         return centered_lines
     endfunction
     let g:startify_custom_header = s:filter_header(startify#fortune#cowsay())
+
+if &term =~ '256color'
+	    " Disable Background Color Erase (BCE) so that color schemes
+	    " work properly when Vim is used inside tmux and GNU screen.
+    set t_ut=
+endif
