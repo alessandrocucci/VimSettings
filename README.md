@@ -9,6 +9,7 @@ In questo repository ho messo il mio file .vimrc e i plugin che uso. In particol
     - Syntastic (syntax highlight)
     - Cucci Theme (color theme)
     - NerdTree (files tree)
+    - NerdCommenter (commentare in blocco delle righe)
     - ctrlp.vim (handle multiple files)
     - vim-fugitive (Git wrapper)
     - powerline (enhanced status line)

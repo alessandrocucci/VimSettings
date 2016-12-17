@@ -22,6 +22,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'python-rope/ropevim', { 'for': ['python'] }
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
