@@ -5,6 +5,7 @@ In questo repository ho messo il mio file .vimrc e i plugin che uso. In particol
 
     - SimpylFold (code folding)
     - Jedi-Vim (auto-completition)
+    - vim-python-PEP8-indent (indentation)
     - Syntastic (syntax highlight)
     - Cucci Theme (color theme)
     - NerdTree (files tree)
@@ -25,6 +26,7 @@ In più, sono state definite queste scorciatoie da tastiera:
   - <C-H> Spostati nel buffer a sinistra
   - <C-n> Mostra alberatura
   - <F5> Salva ed esegui con Python
+  - <F3> Apre un nuovo buffer a destra con split verticale
 
 
 Altre definizioni:

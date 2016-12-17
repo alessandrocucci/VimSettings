@@ -20,6 +20,8 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'mhinz/vim-signify'
 Plugin 'mhinz/vim-startify'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'python-rope/ropevim', { 'for': ['python'] }
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,6 +42,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+"split window vertically
+nnoremap <F3> :vert belowright sb<CR>
 
 let g:SimpylFold_docstring_preview=1
 
