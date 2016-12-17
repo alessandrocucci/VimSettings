@@ -6,7 +6,7 @@ In questo repository ho messo il mio file .vimrc e i plugin che uso. In particol
     - SimpylFold (code folding)
     - Jedi-Vim (auto-completition)
     - Syntastic (syntax highlight)
-    - Zenburn (color theme)
+    - Cucci Theme (color theme)
     - NerdTree (files tree)
     - ctrlp.vim (handle multiple files)
     - vim-fugitive (Git wrapper)

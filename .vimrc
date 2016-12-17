@@ -85,15 +85,12 @@ let g:syntastic_check_on_wq = 0
 let python_highlight_all=1
 syntax on
 
-colorscheme cucci
-
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 set nu
 
-
-
+colorscheme cucci
 
 function! SaveAndExecutePython()
     " SOURCE [reusable window]: https://github.com/fatih/vim-go/blob/master/autoload/go/ui.vim
