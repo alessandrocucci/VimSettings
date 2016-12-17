@@ -47,12 +47,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
 \ set shiftwidth=2 |
 ```
 
-
-### Todos
-
- - Personalizzare il tema
- - Abilitare auto-complete senza premere <C-Space>
-
 License
 ----
 
