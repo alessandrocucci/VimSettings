@@ -16,6 +16,7 @@ In questo repository ho messo il mio file .vimrc e i plugin che uso. In particol
     - vim-signify (vari diffs)
     - vim-startify (spash screen - NB. me lo sono personalizzato)
     - vim-gitgutter (git diffs)
+    - tagbar (class tree, necessita di exuberant ctags)
 
 
 In più, sono state definite queste scorciatoie da tastiera:
@@ -28,7 +29,7 @@ In più, sono state definite queste scorciatoie da tastiera:
   - <C-n> Mostra alberatura
   - <F5> Salva ed esegui con Python
   - <F3> Apre un nuovo buffer a destra con split verticale
-
+  - <F8> Mostra alberatura classi
 
 Altre definizioni:
 

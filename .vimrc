@@ -23,6 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'python-rope/ropevim', { 'for': ['python'] }
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,6 +47,9 @@ nnoremap <C-H> <C-W><C-H>
 
 "split window vertically
 nnoremap <F3> :vert belowright sb<CR>
+
+"open tabgar class tree
+nnoremap <F8> :TagbarToggle<CR>
 
 let g:SimpylFold_docstring_preview=1
 
