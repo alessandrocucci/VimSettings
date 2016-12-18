@@ -36,6 +36,10 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
+" Close/Open all folds
+nnoremap <F9> zM
+nnoremap <F10> zR
+
 " Enable autocompletition
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 

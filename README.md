@@ -22,6 +22,8 @@ In questo repository ho messo il mio file .vimrc e i plugin che uso. In particol
 In più, sono state definite queste scorciatoie da tastiera:
 
   - <space> Folding
+  - <F9> Chiudi tutto (folding)
+  - <F10> Apri tutto (folding)
   - <C-J> Spostanti nel buffer a destra
   - <C-K> Spostati nel buffer in alto
   - <C-L> Spostati nel buffer in basso
@@ -30,7 +32,7 @@ In più, sono state definite queste scorciatoie da tastiera:
   - <F5> Salva ed esegui con Python
   - <F3> Apre un nuovo buffer a destra con split verticale
   - <F8> Mostra alberatura classi
-
+ 
 Altre definizioni:
 
 ```vim
@@ -50,6 +52,21 @@ au BufNewFile,BufRead *.js, *.html, *.css
 \ set softtabstop=2 |
 \ set shiftwidth=2 |
 ```
+
+Installazione
+-------------
+  - Clona questo repo, metti tutto dentro .vim e il file .vimrc in ~/
+  - Installa Vundle:
+
+
+```bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+  - Entra in vim ed esegui :PluginInstall
+  - se vuoi, modifica il file fortune.vim e spostalo in
+    .vim/bundle/vim-startify/autoload/startify/fortune.vim 
+
 
 ScreenShots
 -----------

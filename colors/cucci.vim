@@ -18,7 +18,7 @@ hi DiffChange   ctermfg=184     ctermbg=236     cterm=bold
 hi DiffDelete   ctermfg=160     ctermbg=236     cterm=bold
 hi DiffText     ctermfg=236     ctermbg=184     cterm=bold
 hi ErrorMsg     ctermfg=196     ctermbg=235     cterm=bold
-hi Folded       ctermfg=175     ctermbg=236     cterm=none
+hi Folded       ctermfg=7       ctermbg=236     cterm=none
 hi IncSearch    ctermfg=140     ctermbg=240     cterm=bold
 hi LineNr       ctermfg=238     ctermbg=235     cterm=none
 hi MatchParen   ctermfg=110     ctermbg=240     cterm=bold
