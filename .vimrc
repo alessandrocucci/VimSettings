@@ -29,6 +29,10 @@ Plugin 'majutsushi/tagbar'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" using Source Code Pro
+set anti enc=utf-8
+set guifont=Source\ Code\ Pro\ 12
+
 " Enable folding
 set foldmethod=indent
 set foldlevel=99

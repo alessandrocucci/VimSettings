@@ -1,0 +1,2 @@
+mkdir -p ~/.fonts/Source_Code_Pro
+unzip Source_Code_Pro.zip  -d ~/.fonts/Source_Code_Pro
