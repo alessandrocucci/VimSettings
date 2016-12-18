@@ -180,3 +180,12 @@ if &term =~ '256color'
 	    " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
 endif
+
+autocmd VimEnter *
+	\   if !argc()
+	\ |   Startify
+	\ |   NERDTree
+	\ |   wincmd w
+	\ | endif
+
+highlight StartifyHeader  ctermfg=166
