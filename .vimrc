@@ -168,12 +168,12 @@ endfunction
 nnoremap <silent> <F5> :<C-u>call SaveAndExecutePython()<CR>
 
 function! s:filter_header(lines) abort
-        let longest_line   = max(map(copy(a:lines), 'len(v:val)'))
-        let centered_lines = map(copy(a:lines),
-            \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
-        return centered_lines
-    endfunction
-    let g:startify_custom_header = s:filter_header(startify#fortune#cowsay())
+	let longest_line   = max(map(copy(a:lines), 'len(v:val)'))
+	let centered_lines = map(copy(a:lines),
+	    \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+	return centered_lines
+endfunction
+let g:startify_custom_header = s:filter_header(startify#fortune#cowsay())
 
 if &term =~ '256color'
 	    " Disable Background Color Erase (BCE) so that color schemes
