@@ -21,7 +21,6 @@ Plugin 'mhinz/vim-signify'
 Plugin 'mhinz/vim-startify'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'python-rope/ropevim', { 'for': ['python'] }
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 
@@ -173,7 +172,43 @@ function! s:filter_header(lines) abort
 	    \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
 	return centered_lines
 endfunction
-let g:startify_custom_header = s:filter_header(startify#fortune#cowsay())
+let g:startify_custom_header = [
+\ '                                       ╓,                                          ',
+\ '                                    ,█████▌                               ,╓▄╓     ',
+\ '                                    ╫██████                             ▄███████▄  ',
+\ '                                     ╙███▌`                            ▓█████████K ',
+\ '                                       ▀█▌                            ▐██████████" ',
+\ '                                       `██                          ╓▓████████▀▀   ',
+\ '                                        ▓█▄                      ,▄████▀▀╙╙`       ',
+\ '                                         ▐██                   ,▄███▀╙             ',
+\ '          ▄▓████▓▄                        ██╕               ,▄███▀"                ',
+\ '         ██████████w                      ╢██            ╓▄███▀`                   ',
+\ '        ╚███████████▓▄╓,                  ╙██▄        ╓▄███▀`                      ',
+\ '         ██████████████████▓▄▄╓            ███╕    ▄▓███▀                          ',
+\ '         `▀██████▀▀``╙╙▀▀▀▀███████▓▄▄▄,    ████▄▄▓███▀`                            ',
+\ '             ``               ``╙▀▀▀███████████████É                               ',
+\ '                                       `╙▓█████████████▓▄▄▄╓,  ,▄▄▓▄▄              ',
+\ '                                       ▄▓████████M   `╙╙▀▀▀▀██████████             ',
+\ '                                    ╓▄██▀╙   `▓██▌            ╙██████▀             ',
+\ '                                 ╓▄█▀▀`        ▀██╕             ╙▀▀▀`              ',
+\ '                          ╓▄▄▄▄▓█▀╨             ▀██                                ',
+\ '                          █████▀                 ╙██                               ',
+\ '                          ▀███▀                   ╙██▄▄                            ',
+\ '                                                  .████▀            ,,             ',
+\ '                      ╫█████M                      `╙`            ╔█▀█▌            ',
+\ '                     .██▌,,.╔██▓██≥▄▓███▓╓██▓▓▄██▓██,▓████╦▄▓███▓  ╚██             ',
+\ '                     ╫█████H██▌▐██║██▄▓██▓██╙╫██ ██▌███▄██▌██▌▄██╙█▌██             ',
+\ '                     ██▌   ▐██ ▓█▌██▌▐▄▄▐██H ██▌╔██╣██┘▄▄▄▓█▌└▄▄░                  ',
+\ '                    ║█████▌▓█▌╓██^▓████▀╣█▓  ▀█▀██▌╙████▀`▀████▀                   ',
+\ '                                            ▓██▓█▓`                                ',
+\ '                                                                                   ',
+\ '                    Alessandro Cucci  <alessandro.cucci@energee3.com>              ',
+\ '                                    Python Developer                               ',
+\ '                                            @                                      ',
+\ '                                      Energee3 srl                                 ',
+\ '                                 www.alessandrocucci.it                            ',
+\ ]
+
 
 if &term =~ '256color'
 	    " Disable Background Color Erase (BCE) so that color schemes

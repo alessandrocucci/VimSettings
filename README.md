@@ -63,9 +63,8 @@ Installazione
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
+  - Installa exuberant ctags, e con pip install: jedi, pyflakes
   - Entra in vim ed esegui :PluginInstall
-  - se vuoi, modifica il file fortune.vim e spostalo in
-    .vim/bundle/vim-startify/autoload/startify/fortune.vim 
 
 
 ScreenShots
