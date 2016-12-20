@@ -28,6 +28,9 @@ Plugin 'majutsushi/tagbar'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" highlight current line
+set cursorline         
+
 " using Source Code Pro
 set anti enc=utf-8
 set guifont=Source\ Code\ Pro\ 12
