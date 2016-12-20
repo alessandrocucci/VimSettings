@@ -21,17 +21,17 @@ In questo repository ho messo il mio file .vimrc e i plugin che uso. In particol
 
 In più, sono state definite queste scorciatoie da tastiera:
 
-  - <space> Folding
-  - <F9> Chiudi tutto (folding)
-  - <F10> Apri tutto (folding)
-  - <C-J> Spostanti nel buffer a destra
-  - <C-K> Spostati nel buffer in alto
-  - <C-L> Spostati nel buffer in basso
-  - <C-H> Spostati nel buffer a sinistra
-  - <C-n> Mostra alberatura
-  - <F5> Salva ed esegui con Python
-  - <F3> Apre un nuovo buffer a destra con split verticale
-  - <F8> Mostra alberatura classi
+  - &lt;space&gt; Folding
+  - &lt;F9&gt; Chiudi tutto (folding)
+  - &lt;F10&gt; Apri tutto (folding)
+  - &lt;C-J&gt; Spostanti nel buffer a destra
+  - &lt;C-K&gt; Spostati nel buffer in alto
+  - &lt;C-L&gt; Spostati nel buffer in basso
+  - &lt;C-H&gt; Spostati nel buffer a sinistra
+  - &lt;C-n&gt; Mostra alberatura
+  - &lt;F5&gt; Salva ed esegui con Python
+  - &lt;F3&gt; Apre un nuovo buffer a destra con split verticale
+  - &lt;F8&gt; Mostra alberatura classi
  
 Altre definizioni:
 
@@ -65,7 +65,13 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
   - Installa exuberant ctags, e con pip install: jedi, pyflakes
   - Entra in vim ed esegui :PluginInstall
+  - Installa i font per Powerline con:
 
+```bash
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+```
 
 ScreenShots
 -----------
